@@ -500,9 +500,9 @@
 
        
         <div class="content-area">
-            Dashboard Section
+            
             <div id="dashboard-section" class="content-section">
-                Metrics Row
+               
                 <div class="row mb-4">
                     <div class="col-md-3 mb-3">
                         <div class="metric-card">
@@ -648,7 +648,7 @@
                                     </div>
                                     <div class="flex-grow-1">
                                         <div class="fw-semibold">New user registration</div>
-                                        <small class="text-muted">john.doe@example.com - 2 minutes ago</small>
+                                        <small class="text-muted">rajputapurva12@gmail.com - 2 minutes ago</small>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-start mb-3">
@@ -969,7 +969,7 @@
                                 </tr>
                             </thead>
                             <tbody id="logsTableBody">
-                                Logs will be populated here
+                               
                             </tbody>
                         </table>
                     </div>
@@ -1363,10 +1363,9 @@
         function populateUserTable() {
             const tbody = document.getElementById('usersTableBody');
             const users = [
-                { name: 'John Doe', email: 'john.doe@example.com', role: 'Builder', status: 'active', lastActive: '2 hours ago', projects: 5 },
-                { name: 'Jane Smith', email: 'jane.smith@example.com', role: 'Buyer', status: 'active', lastActive: '1 day ago', projects: 2 },
-                { name: 'Mike Johnson', email: 'mike.j@example.com', role: 'Admin', status: 'active', lastActive: '30 minutes ago', projects: 12 },
-                { name: 'Sarah Wilson', email: 'sarah.w@example.com', role: 'Builder', status: 'inactive', lastActive: '1 week ago', projects: 3 }
+                { name: 'Apurva Rajput', email: 'rajputapurva12@gmail.com', role: 'Builder', status: 'active', lastActive: '2 hours ago', projects: 5 },
+                { name: 'Samarth Sharma', email: 'samarthsharma1211@gmail.com', role: 'Buyer', status: 'active', lastActive: '1 day ago', projects: 2 },
+                
             ];
 
             tbody.innerHTML = users.map(user => `
@@ -1397,10 +1396,9 @@
         function populateProjectTable() {
             const tbody = document.getElementById('projectsTableBody');
             const projects = [
-                { name: 'Climate Analysis Project', owner: 'John Doe', type: 'Research', status: 'active', created: '2024-01-15' },
-                { name: 'Sustainable Building Initiative', owner: 'Jane Smith', type: 'Construction', status: 'pending', created: '2024-01-20' },
-                { name: 'Land Assessment Study', owner: 'Mike Johnson', type: 'Analysis', status: 'active', created: '2024-01-10' },
-                { name: 'Environmental Impact Report', owner: 'Sarah Wilson', type: 'Report', status: 'inactive', created: '2024-01-05' }
+                { name: 'Climate Analysis Project', owner: 'Apurva Rajput', type: 'Research', status: 'active', created: '2024-01-15' },
+                { name: 'Sustainable Building Initiative', owner: 'Samarth Sharma', type: 'Construction', status: 'pending', created: '2024-01-20' },
+                
             ];
 
             tbody.innerHTML = projects.map(project => `
@@ -1428,10 +1426,9 @@
         function populateActivityLogs() {
             const tbody = document.getElementById('logsTableBody');
             const logs = [
-                { timestamp: '2024-01-25 14:30:25', user: 'john.doe@example.com', action: 'Login', resource: 'Dashboard', status: 'Success', ip: '192.168.1.100' },
-                { timestamp: '2024-01-25 14:25:12', user: 'jane.smith@example.com', action: 'Create Project', resource: 'Project #156', status: 'Success', ip: '192.168.1.101' },
-                { timestamp: '2024-01-25 14:20:45', user: 'system', action: 'API Request', resource: 'MODIS Data', status: 'Success', ip: '10.0.0.1' },
-                { timestamp: '2024-01-25 14:15:33', user: 'mike.j@example.com', action: 'Update Settings', resource: 'System Config', status: 'Success', ip: '192.168.1.102' }
+                { timestamp: '2024-01-25 14:30:25', user: 'rajputapurva12@gmail.com', action: 'Login', resource: 'Dashboard', status: 'Success', ip: '192.168.1.100' },
+                { timestamp: '2024-01-25 14:25:12', user: 'samarthsharma1211@gmail.com', action: 'Create Project', resource: 'Project #156', status: 'Success', ip: '192.168.1.101' },
+                
             ];
 
             tbody.innerHTML = logs.map(log => `
