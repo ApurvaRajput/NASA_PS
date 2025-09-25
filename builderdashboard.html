@@ -228,6 +228,7 @@
         </div>
     </section>
 
+    <!-- ++++++++++++++++ -->
     <section id="projects" class="py-5 bg-light">
         <div class="container">
             <h2 class="section-title">Active Projects</h2>
@@ -263,7 +264,8 @@
         </div>
     </section>
 
-    <div class="modal fade" id="newProjectModal" tabindex="-1" aria-labelledby="newProjectModalLabel"
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="newProjectModal" tabindex="-1" aria-labelledby="newProjectModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -272,8 +274,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
-                    <form id="newProjectForm" novalidate>
+                    <form id="newProjectForm">
                         <div class="mb-3">
                             <label for="projectName" class="form-label">Project Name <span
                                     class="text-danger">*</span></label>
@@ -334,18 +335,14 @@
                             <small class="form-text text-muted">Max 500 characters.</small>
                         </div>
                         <div class="mb-3">
-                            <label for="dataTypes" class="form-label">NASA Data Types <span
-                                    class="text-danger">*</span></label>
-                            <select class="form-select" id="dataTypes" multiple required>
-                                <option value="NDVI">NDVI (Vegetation Index)</option>
-                                <option value="LST">LST (Land Surface Temperature)</option>
-                                <option value="Precipitation">Precipitation (GPM)</option>
-                                <option value="AQI">AQI (Air Quality - NO2)</option>
-                                <option value="Groundwater">Groundwater (GRACE)</option>
+                            <label class="form-label">Data Types</label>
+                            <select class="form-select" id="dataTypes" multiple>
+                                <option value="ndvi">NDVI (Vegetation Health)</option>
+                                <option value="lst">Land Surface Temperature</option>
+                                <option value="precipitation">Precipitation</option>
+                                <option value="aqi">Air Quality Index</option>
+                                <option value="groundwater">Groundwater</option>
                             </select>
-                            <small class="form-text text-muted">Hold Ctrl (Windows) or Cmd (Mac) to select
-                                multiple.</small>
-                            <div class="invalid-feedback">Please select at least one data type.</div>
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="blockchainVerify">
@@ -353,18 +350,59 @@
                                 Sustainability Passport</label>
                         </div>
                         <div id="formError" class="alert alert-danger d-none"></div>
-
-                        <!-- Modal Footer with Save Button -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Save Project</button>
-                        </div>
                     </form>
-
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <!-- ++++++++++++++++++ -->
+
+
+    <!-- <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Active Projects</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Urban Renewal Project</h5>
+                            <p class="card-text">Downtown revitalization with green infrastructure</p>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                            <span class="sustainability-badge">85</span>
+                            <div class="mt-3">
+                                <button class="btn btn-primary btn-sm me-2">View Details</button>
+                                <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Housing Development</h5>
+                            <p class="card-text">Sustainable residential complex with solar integration</p>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Portland, OR</p>
+                            <span class="sustainability-badge">92</span>
+                            <div class="mt-3">
+                                <button class="btn btn-primary btn-sm me-2">View Details</button>
+                                <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 d-flex align-items-center justify-content-center" style="min-height: 200px;">
+                        <div class="text-center">
+                            <i class="fas fa-plus-circle fa-3x text-muted mb-3"></i>
+                            <h5>Add New Project</h5>
+                            <button class="btn btn-success">Create Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section> -->
 
 
     <section id="analytics" class="py-5">
@@ -568,6 +606,9 @@
         </div>
     </section>
 
+
+
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -628,13 +669,15 @@
             </div>
         </div>
     </div>
-    <!-- +++++++++++++++++++ -->
+
+
+    <!-- Modal for New Project Creation -->
     <div class="modal fade" id="newProjectModal" tabindex="-1" aria-labelledby="newProjectModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header" style="background: linear-gradient(135deg, #007bff, #00c6ff); color: white;">
-                    <h5 class="modal-title" id="newProjectModalLabel">Create New Project</h5>
+                    <h5 class="modal-title" id="#newProjectModalLabel">Create New Project</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -728,24 +771,6 @@
         </div>
     </div>
 
-    <!-- ++++++++++++++++++ -->
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <!-- PapaParse (for CSV if needed) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-
-
     <script>
         document.getElementById("newProjectForm").addEventListener("submit", function (e) {
             e.preventDefault();
@@ -762,20 +787,20 @@
 
             // Create new card
             const projectCard = `
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card project-card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">${name}</h5>
-                        <p class="card-text">${type} project</p>
-                        <p class="text-muted"><i class="fas fa-map-marker-alt"></i> ${location}</p>
-                        <span class="sustainability-badge">--</span>
-                        <div class="mt-3">
-                            <button class="btn btn-primary btn-sm me-2">View Details</button>
-                            <button class="btn btn-outline-secondary btn-sm">Edit</button>
-                        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card project-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">${name}</h5>
+                    <p class="card-text">${type} project</p>
+                    <p class="text-muted"><i class="fas fa-map-marker-alt"></i> ${location}</p>
+                    <span class="sustainability-badge">--</span>
+                    <div class="mt-3">
+                        <button class="btn btn-primary btn-sm me-2">View Details</button>
+                        <button class="btn btn-outline-secondary btn-sm">Edit</button>
                     </div>
                 </div>
             </div>
+        </div>
     `;
 
             // Insert before "Add New Project" card
@@ -791,8 +816,161 @@
     </script>
 
 
+    <script>
+        // GSAP Animation for Modal
+        document.getElementById('newProjectModal').addEventListener('show.bs.modal', () => {
+            gsap.from('#newProjectModal .modal-content', {
+                opacity: 0,
+                y: 50,
+                duration: 0.5,
+                ease: 'power2.out'
+            });
+            gsap.from('#newProjectForm .form-control, #newProjectForm .form-select', {
+                opacity: 0,
+                x: -20,
+                duration: 0.5,
+                stagger: 0.1,
+                ease: 'power2.out'
+            });
+        });
 
+        // Set via Map Button
+        document.getElementById('setViaMap').addEventListener('click', () => {
+            document.querySelector('a[href="#planner"]').click();
+            map.on('click', function setMapCoords(e) {
+                document.getElementById('latitude').value = e.latlng.lat.toFixed(4);
+                document.getElementById('longitude').value = e.latlng.lng.toFixed(4);
+                map.off('click', setMapCoords);
+            });
+        });
 
+        // Form Validation and Submission
+        document.getElementById('saveProject').addEventListener('click', () => {
+            const form = document.getElementById('newProjectForm');
+            const errorDiv = document.getElementById('formError');
+            errorDiv.classList.add('d-none');
+            errorDiv.textContent = '';
+
+            // Validate inputs
+            const projectName = document.getElementById('projectName').value.trim();
+            const location = document.getElementById('projectLocation').value.trim();
+            const latitude = parseFloat(document.getElementById('latitude').value);
+            const longitude = parseFloat(document.getElementById('longitude').value);
+            const projectType = document.getElementById('projectType').value;
+            const startDate = document.getElementById('startDate').value;
+            const endDate = document.getElementById('endDate').value;
+            const sustainabilityGoal = document.getElementById('sustainabilityGoal').value.trim();
+            const dataTypes = Array.from(document.getElementById('dataTypes').selectedOptions).map(opt => opt.value);
+            const blockchainVerify = document.getElementById('blockchainVerify').checked;
+
+            let errors = [];
+            if (!projectName) errors.push('Project name is required.');
+            if (!location) errors.push('Location is required.');
+            if (!isNaN(latitude) && (latitude < -90 || latitude > 90)) errors.push('Latitude must be between -90 and 90.');
+            if (!isNaN(longitude) && (longitude < -180 || longitude > 180)) errors.push('Longitude must be between -180 and 180.');
+            if (!projectType) errors.push('Project type is required.');
+            if (!startDate) errors.push('Start date is required.');
+            if (startDate && new Date(startDate) < new Date().setHours(0, 0, 0, 0)) errors.push('Start date must be today or in the future.');
+            if (endDate && new Date(endDate) <= new Date(startDate)) errors.push('End date must be after start date.');
+            if (dataTypes.length === 0) errors.push('At least one NASA data type must be selected.');
+
+            if (errors.length > 0) {
+                errorDiv.textContent = errors.join(' ');
+                errorDiv.classList.remove('d-none');
+                form.classList.add('was-validated');
+                return;
+            }
+
+            // Generate demo NASA data if coordinates provided
+            let nasaData = '';
+            if (!isNaN(latitude) && !isNaN(longitude)) {
+                const latFactor = Math.abs(latitude) < 30 ? 1 : 0.7;
+                const demoData = {
+                    NDVI: dataTypes.includes('NDVI') ? (Math.random() * 0.4 + 0.5 * latFactor).toFixed(2) : null,
+                    LST: dataTypes.includes('LST') ? (Math.random() * 20 + 20).toFixed(1) : null,
+                    Precipitation: dataTypes.includes('Precipitation') ? (Math.random() * 200).toFixed(1) : null,
+                    AQI: dataTypes.includes('AQI') ? (Math.random() * 40 + 10).toFixed(1) : null,
+                    Groundwater: dataTypes.includes('Groundwater') ? (Math.random() * 20 - 10).toFixed(1) : null
+                };
+                nasaData = Object.entries(demoData)
+                    .filter(([_, value]) => value !== null)
+                    .map(([key, value]) => `${key}: ${value}${key === 'NDVI' ? '' : key === 'LST' ? '°C' : key === 'Precipitation' ? ' mm' : key === 'AQI' ? ' µg/m³' : ' cm'}`)
+                    .join('\n');
+            }
+
+            // Simulate project creation
+            const projectData = {
+                name: projectName,
+                location: location,
+                latitude: latitude || 'Not set',
+                longitude: longitude || 'Not set',
+                type: projectType,
+                startDate,
+                endDate: endDate || 'Not set',
+                sustainabilityGoal: sustainabilityGoal || 'None',
+                dataTypes,
+                blockchainVerify
+            };
+
+            alert(
+                `Project "${projectName}" created successfully!\n` +
+                `Location: ${location}\n` +
+                `Latitude: ${projectData.latitude}\n` +
+                `Longitude: ${projectData.longitude}\n` +
+                `Type: ${projectType}\n` +
+                `Start Date: ${startDate}\n` +
+                `End Date: ${projectData.endDate}\n` +
+                `Sustainability Goal: ${projectData.sustainabilityGoal}\n` +
+                `NASA Data Types: ${dataTypes.join(', ')}\n` +
+                `Blockchain Verification: ${blockchainVerify ? 'Enabled' : 'Disabled'}\n` +
+                (nasaData ? 'Demo NASA Data:\n' + nasaData : '')
+            );
+
+            // Add new project card dynamically
+            const projectsSection = document.querySelector('#projects .row');
+            if (projectsSection) {
+                // Insert before the "Add New Project" card (last child)
+                const newCard = document.createElement('div');
+                newCard.className = 'col-md-6 col-lg-4 mb-4';
+                newCard.innerHTML = `
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">${projectName}</h5>
+                            <p class="card-text">${sustainabilityGoal ? sustainabilityGoal : 'No sustainability goal set.'}</p>
+                            <p class="text-muted"><i class="fas fa-map-marker-alt"></i> ${location}</p>
+                            <span class="sustainability-badge">${Math.floor(Math.random() * 20 + 80)}</span>
+                            <div class="mt-3">
+                                <button class="btn btn-primary btn-sm me-2">View Details</button>
+                                <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                // Insert before the last child (the "Add New Project" card)
+                projectsSection.insertBefore(newCard, projectsSection.lastElementChild);
+                gsap.from(newCard, { opacity: 0, y: 20, duration: 0.5, ease: 'power2.out' });
+            }
+
+            // Close modal and reset form
+            bootstrap.Modal.getInstance(document.getElementById('newProjectModal')).hide();
+            form.classList.remove('was-validated');
+            form.reset();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- PapaParse (for CSV if needed) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 
     <script>
         // Global variables
@@ -1047,7 +1225,7 @@
             const html = `
                 <div class="location-data fade-in">
                     <h6><i class="fas fa-map-marker-alt"></i> Location: ${lat}, ${lng}</h6>
-
+                    
                     <div class="row mt-3">
                         <div class="col-6">
                             <div class="text-center">
@@ -1062,22 +1240,22 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="mt-3">
                         <canvas id="locationChart" width="300" height="200"></canvas>
                     </div>
-
+                    
                     <div class="mt-3">
                         <h6>Air Quality</h6>
                         <p class="mb-1">NO2: ${data.no2} µg/m³</p>
                         <p class="mb-1">AOD: ${data.aod}</p>
-
+                        
                         <h6 class="mt-3">Climate Data</h6>
                         <p class="mb-1">Precipitation: ${data.precipitation} mm</p>
                         <p class="mb-1">Groundwater: ${data.groundwater} cm</p>
                     </div>
                 </div>
-                `;
+            `;
 
             locationDataDiv.innerHTML = html;
 
@@ -1207,7 +1385,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            `;
+            `;
 
             dataTypes.forEach(type => {
                 let value, unit;
@@ -1235,11 +1413,11 @@
                 }
 
                 tableHTML += `
-                            <tr>
-                                <td>${type.toUpperCase()}</td>
-                                <td>${value}</td>
-                                <td>${unit}</td>
-                            </tr>
+                    <tr>
+                        <td>${type.toUpperCase()}</td>
+                        <td>${value}</td>
+                        <td>${unit}</td>
+                    </tr>
                 `;
             });
 
@@ -1275,9 +1453,7 @@
                 }
             });
         });
-
     </script>
-
 </body>
 
 </html>
